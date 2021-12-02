@@ -3,7 +3,7 @@ pipeline {
     stages { 
         stage ('Checkout') { 
             steps { 
-                git branch:'master', url: 'https://github.com/cgtjl/3203code.git' 
+                git branch: 'main', credentialsId: '3203test', url: 'https://github.com/cgtjl/3203code.git' 
             } 
         } 
          
